@@ -9,7 +9,7 @@ These are useful for testing Specfiles in an isolated manner.
 Optain a bash shell with the workdir set to /git.
 
 ```
-docker run --rm -v `pwd`:'/git' hairmare/rpmdev:centos
+docker run --rm -ti -v `pwd`:'/git' hairmare/rpmdev:centos
 ```
 
 Build package from a specfile.
@@ -24,5 +24,5 @@ Use the opinionated tarball helper if you need to create a source tarball.
 vcsDir="/git"
 targetFileName="foo-bar-0.0.0.tar.gz"
 
-bash create-source-tarball.sh ${vcsDir} ${targetFileName}
+create-source-tarball.sh ${vcsDir} ${targetFileName}
 ```
