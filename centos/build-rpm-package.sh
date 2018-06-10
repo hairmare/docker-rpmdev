@@ -14,6 +14,6 @@ rpmdev-setuptree
 
 spectool -R -g "${FILE}"
 
-yum-builddep "${FILE}"
+yum-builddep -y "${FILE}"
 
 rpmbuild -ba "${FILE}"

@@ -11,7 +11,7 @@ RUN dnf install -y \
         selinux-policy-devel \
         selinux-policy-doc \
         tito \
-  && dnf clean all
+ && dnf clean all
 
 COPY build-rpm-package.sh \
      create-source-tarball.sh \

@@ -14,6 +14,6 @@ rpmdev-setuptree
 
 spectool -R -g "${FILE}"
 
-dnf builddep "${FILE}"
+dnf builddep -y "${FILE}"
 
 rpmbuild -ba "${FILE}"

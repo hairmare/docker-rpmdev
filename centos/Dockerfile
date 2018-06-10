@@ -13,7 +13,7 @@ RUN yum install -y \
         selinux-policy-devel \
         selinux-policy-doc \
         tito \
-  && yum clean all
+ && yum clean all
 
 COPY build-rpm-package.sh \
      create-source-tarball.sh \
