@@ -9,7 +9,11 @@ These are useful for testing Specfiles in an isolated manner.
 Optain a bash shell with the workdir set to /git.
 
 ```
-docker run --rm -ti -v `pwd`:'/git' hairmare/rpmdev:centos
+docker run --rm -ti -v `pwd`:'/git' quay.io/hairmare/centos_rpmdev
+```
+Or use Fedora
+```
+docker run --rm -ti -v `pwd`:'/git' quay.io/hairmare/fedora_rpmdev
 ```
 
 Build package from a specfile.
