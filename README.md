@@ -15,6 +15,10 @@ Or use Fedora
 ```
 docker run --rm -ti -v `pwd`:'/git' quay.io/hairmare/fedora_rpmdev
 ```
+Or openSUSE
+```
+docker run --rm -ti -v `pwd`:'/git' quay.io/hairmare/opensuse_rpmdev
+```
 
 Build package from a specfile.
 ```
