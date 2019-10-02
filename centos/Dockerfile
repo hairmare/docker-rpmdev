@@ -12,7 +12,6 @@ RUN yum install -y \
         rpmdevtools \
         selinux-policy-devel \
         selinux-policy-doc \
-        tito \
  && yum clean all
 
 COPY build-rpm-package.sh \
